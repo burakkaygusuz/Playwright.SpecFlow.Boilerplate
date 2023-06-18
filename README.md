@@ -10,10 +10,10 @@ Boilerplate project to run Playwright tests with SpecFlow and .NET 7 to web appl
 Make sure you have installed and be configured the environment variables all the following prerequisites on your
 development machine:
 
-| OS      | .NET SDK                                |
-|---------|-----------------------------------------|
-| Windows | `winget install Microsoft.DotNet.SDK.7` |
-| Linux   | `brew install --cask dotnet-sdk`        |
+| OS      | .NET SDK                                     | Powershell                                 |
+| ------- | -------------------------------------------- | ------------------------------------------ |
+| Windows | `winget install --id Microsoft.DotNet.SDK.7` | `winget install --id Microsoft.PowerShell` |
+| macOS   | `brew install --cask dotnet-sdk`             | `brew install --cask powershell`           |
 
 ## Executing the Tests
 
