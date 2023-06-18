@@ -1,0 +1,7 @@
+{
+    "dotnet.defaultSolution": "Playwright.SpecFlow.Boilerplate.sln",
+    "cucumberautocomplete.steps": [
+      "/**/Steps/**/*.cs"
+    ]
+  }
+  
