@@ -1,0 +1,27 @@
+name: Playwright SpecFlow Tests
+
+on:
+  push:
+    branches: ["master"]
+  pull_request:
+    branches: ["master"]
+
+jobs:
+  build:
+    runs-on: windows-latest
+
+    steps:
+      - uses: actions/checkout@v3
+      - name: Setup .NET
+        uses: actions/setup-dotnet@v3
+        with:
+          dotnet-version: 7.0.x
+      - name: Restore Dependencies
+        run: dotnet restore
+      - name: Build
+        run: dotnet build --no-restore
+      - name: Install Required Browsers
+        run: |
+          pwsh .\bin\Debug\net7.0\playwright.ps1 install
+      - name: Execute the Tests
+        run: dotnet test --no-build --verbosity normal
