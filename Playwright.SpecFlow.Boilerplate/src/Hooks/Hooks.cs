@@ -20,7 +20,7 @@ public class Hooks
         var playwright = await Microsoft.Playwright.Playwright.CreateAsync();
         _browser = await playwright.Chromium.LaunchAsync(new BrowserTypeLaunchOptions
         {
-            Headless = false,
+            Headless = true,
             SlowMo = 50,
             Timeout = 60000
         });
