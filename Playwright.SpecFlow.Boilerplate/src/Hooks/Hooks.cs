@@ -5,8 +5,8 @@ namespace Playwright.SpecFlow.Boilerplate.Hooks
     [Binding]
     public class Hooks
     {
-        private static IBrowser _browser;
-        private static IPage _page;
+        private static IBrowser _browser = null!;
+        private static IPage _page = null!;
         private readonly ScenarioContext _scenarioContext;
 
         public Hooks(ScenarioContext scenarioContext) => _scenarioContext = scenarioContext;
