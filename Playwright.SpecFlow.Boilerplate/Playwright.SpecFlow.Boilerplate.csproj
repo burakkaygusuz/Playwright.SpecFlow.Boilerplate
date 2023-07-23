@@ -17,15 +17,6 @@
         <PackageReference Include="SpecFlow.NUnit" Version="3.9.22"/>
         <PackageReference Include="nunit" Version="3.13.2"/>
         <PackageReference Include="NUnit3TestAdapter" Version="4.1.0"/>
-
-    </ItemGroup>
-
-    <ItemGroup>
-        <UpToDateCheckInput Remove="Features\Calculator.feature"/>
-    </ItemGroup>
-
-    <ItemGroup>
-        <UpToDateCheckBuild Remove="Features\Calculator.feature.cs"/>
     </ItemGroup>
 
 </Project>
