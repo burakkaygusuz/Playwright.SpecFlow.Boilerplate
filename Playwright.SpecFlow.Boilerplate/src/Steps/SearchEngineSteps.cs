@@ -26,7 +26,7 @@ public class SearchEngineSteps
         var textArea = _page.Locator("#sb_form_q");
         await Expect(textArea).ToBeVisibleAsync();
         await Expect(textArea).ToBeEmptyAsync();
-        await textArea.TypeAsync(specFlow, new LocatorTypeOptions
+        await textArea.PressSequentiallyAsync(specFlow, new LocatorPressSequentiallyOptions
         {
             Delay = 100
         });
