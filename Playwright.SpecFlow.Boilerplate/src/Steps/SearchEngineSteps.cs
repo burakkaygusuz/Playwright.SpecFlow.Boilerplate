@@ -5,14 +5,9 @@ using static Microsoft.Playwright.Assertions;
 namespace Playwright.SpecFlow.Boilerplate.Steps;
 
 [Binding]
-public class SearchEngineSteps
+public class SearchEngineSteps(ScenarioContext scenarioContext)
 {
-    private readonly IPage _page;
-
-    public SearchEngineSteps(ScenarioContext scenarioContext)
-    {
-        _page = scenarioContext.Get<IPage>("page");
-    }
+    private readonly IPage _page = scenarioContext.Get<IPage>("page");
 
     [Given(@"I am on the (.*) search engine")]
     public async Task GivenIAmOnTheBingSearchEngine(string page)

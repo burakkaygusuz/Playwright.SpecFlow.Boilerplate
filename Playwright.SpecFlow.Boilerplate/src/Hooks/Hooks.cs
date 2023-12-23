@@ -3,13 +3,11 @@
 namespace Playwright.SpecFlow.Boilerplate.Hooks
 {
     [Binding]
-    public class Hooks
+    public class Hooks(ScenarioContext scenarioContext)
     {
         private static IBrowser _browser = null!;
         private static IPage _page = null!;
-        private readonly ScenarioContext _scenarioContext;
-
-        public Hooks(ScenarioContext scenarioContext) => _scenarioContext = scenarioContext;
+        private readonly ScenarioContext _scenarioContext = scenarioContext;
 
         [BeforeTestRun]
         public static async Task SetUpBrowserAsync()
