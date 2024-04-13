@@ -12,7 +12,7 @@ development machine:
 
 | OS      | .NET SDK                                     | Powershell                                 |
 | ------- | -------------------------------------------- | ------------------------------------------ |
-| Windows | `winget install --id Microsoft.DotNet.SDK.7` | `winget install --id Microsoft.PowerShell` |
+| Windows | `winget install --id Microsoft.DotNet.SDK.8` | `winget install --id Microsoft.PowerShell` |
 | macOS   | `brew install --cask dotnet-sdk`             | `brew install --cask powershell`           |
 
 ## Executing the Tests
