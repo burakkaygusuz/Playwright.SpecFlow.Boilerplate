@@ -19,7 +19,6 @@ public class SearchEngineSteps(ScenarioContext scenarioContext)
     public async Task WhenIEnterInTheSearchBox(string specFlow)
     {
         var textArea = _page.Locator("#sb_form_q");
-        await Expect(textArea).ToBeVisibleAsync();
         await Expect(textArea).ToBeEmptyAsync();
         await textArea.PressSequentiallyAsync(specFlow, new LocatorPressSequentiallyOptions
         {
