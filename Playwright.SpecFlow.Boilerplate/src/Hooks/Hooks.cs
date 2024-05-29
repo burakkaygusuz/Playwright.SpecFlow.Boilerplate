@@ -18,7 +18,7 @@ namespace Playwright.SpecFlow.Boilerplate.Hooks
             {
                 Headless = isCi,
                 SlowMo = 50,
-                Timeout = 60000
+                Timeout = 0
             });
             _page = await (await _browser.NewContextAsync(new BrowserNewContextOptions
             {
