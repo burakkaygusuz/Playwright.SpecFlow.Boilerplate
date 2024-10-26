@@ -10,7 +10,7 @@ jobs:
   playwright:
     name: "Playwright Tests"
     runs-on: ubuntu-latest
-    container: mcr.microsoft.com/playwright/dotnet:v1.44.0-jammy
+    container: mcr.microsoft.com/playwright/dotnet:v1.48.0-noble
 
     steps:
       - uses: actions/checkout@v4
