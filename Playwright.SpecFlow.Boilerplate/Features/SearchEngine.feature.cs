@@ -10,7 +10,7 @@
 // ------------------------------------------------------------------------------
 #region Designer generated code
 #pragma warning disable
-namespace Playwright.SpecFlow.Boilerplate.Src.Features
+namespace Playwright.SpecFlow.Boilerplate.Features
 {
     using TechTalk.SpecFlow;
     using System;
@@ -35,8 +35,8 @@ namespace Playwright.SpecFlow.Boilerplate.Src.Features
         public virtual async System.Threading.Tasks.Task FeatureSetupAsync()
         {
             testRunner = TechTalk.SpecFlow.TestRunnerManager.GetTestRunnerForAssembly(null, NUnit.Framework.TestContext.CurrentContext.WorkerId);
-            TechTalk.SpecFlow.FeatureInfo featureInfo = new TechTalk.SpecFlow.FeatureInfo(new System.Globalization.CultureInfo("en-US"), "src/Features", "Search Engine", "As a user\nI want to search for \"SpecFlow\"\nSo that I can find relevant information" +
-                    "", ProgrammingLanguage.CSharp, featureTags);
+            TechTalk.SpecFlow.FeatureInfo featureInfo = new TechTalk.SpecFlow.FeatureInfo(new System.Globalization.CultureInfo("en-US"), "Features", "Search Engine", "  As a user\n  I want to search for \"SpecFlow\"\n  So that I can find relevant infor" +
+                    "mation", ProgrammingLanguage.CSharp, featureTags);
             await testRunner.OnFeatureStartAsync(featureInfo);
         }
         
@@ -82,7 +82,7 @@ namespace Playwright.SpecFlow.Boilerplate.Src.Features
             System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Searching for SpecFlow on Bing", null, tagsOfScenario, argumentsOfScenario, featureTags);
 #line 6
-    this.ScenarioInitialize(scenarioInfo);
+  this.ScenarioInitialize(scenarioInfo);
 #line hidden
             if ((TagHelper.ContainsIgnoreTag(tagsOfScenario) || TagHelper.ContainsIgnoreTag(featureTags)))
             {
@@ -92,16 +92,16 @@ namespace Playwright.SpecFlow.Boilerplate.Src.Features
             {
                 await this.ScenarioStartAsync();
 #line 7
-        await testRunner.GivenAsync("I am on the Bing search engine", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+    await testRunner.GivenAsync("I am on the Bing search engine", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line hidden
 #line 8
-        await testRunner.WhenAsync("I enter SpecFlow in the search box", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+    await testRunner.WhenAsync("I enter SpecFlow in the search box", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line hidden
 #line 9
-        await testRunner.AndAsync("I click the search button", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+    await testRunner.AndAsync("I click the search button", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
 #line 10
-        await testRunner.ThenAsync("I should see search results related to SpecFlow", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+    await testRunner.ThenAsync("I should see search results related to SpecFlow", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             }
             await this.ScenarioCleanupAsync();

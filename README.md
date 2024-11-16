@@ -11,7 +11,7 @@ Make sure you have installed and be configured the environment variables all the
 development machine:
 
 | OS      | .NET SDK                                     | Powershell                                 |
-| ------- | -------------------------------------------- | ------------------------------------------ |
+|---------|----------------------------------------------|--------------------------------------------|
 | Windows | `winget install --id Microsoft.DotNet.SDK.8` | `winget install --id Microsoft.PowerShell` |
 | macOS   | `brew install --cask dotnet-sdk`             | `brew install --cask powershell`           |
 
